@@ -11,5 +11,5 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           no_fork: true
-          tap: aidan-gibson/homebrew-dinit
+          tap: davmac314/dinit
           formula: dinit
