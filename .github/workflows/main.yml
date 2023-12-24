@@ -1,12 +1,15 @@
-bump-homebrew-formula:
-  runs-on:macos-latest
-  steps:
-    - name: Homebrew bump formula
-      # You may pin to the exact commit or the version.
-      # uses: dawidd6/action-homebrew-bump-formula@75ed025ff3ad1d617862838b342b06d613a0ddf3
-      uses: dawidd6/action-homebrew-bump-formula@v3.10.1
-      with:
-        token: ${{secrets.TOKEN}}
-        no_fork: true
-        tap: aidan-gibson/homebrew-dinit
-        formula: dinit
+on:
+  push:
+    tags: '*'
+
+jobs:
+  bump-homebrew-formula:
+    runs-on: macos-latest
+    steps:
+      - name: Homebrew bump formula
+        uses: dawidd6/action-homebrew-bump-formula@v3.10.1
+        with:
+          token: ${{ secrets.TOKEN }}
+          no_fork: true
+          tap: aidan-gibson/homebrew-dinit
+          formula: dinit
