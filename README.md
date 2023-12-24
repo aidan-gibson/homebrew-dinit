@@ -3,6 +3,8 @@ Many thanks to the maintainer!
 
 # homebrew-dinit
 
-`brew tap aidan-gibson/homebrew-dinit`
-`brew update`
-`brew install dinit --force`
+```
+brew tap aidan-gibson/homebrew-dinit
+brew update
+brew install dinit --force
+```
