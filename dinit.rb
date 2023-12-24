@@ -15,8 +15,8 @@ class Dinit < Formula
   service do
     run [opt_sbin/"dinit"]
     keep_alive always: true
-    log_path "#{ENV["HOME"]}/Library/Logs/dinit.log"
-    error_log_path "#{ENV["HOME"]}/Library/Logs/dinit.log"
+    log_path "#{Dir.home}/Library/Logs/dinit.log"
+    error_log_path "#{Dir.home}/Library/Logs/dinit.log"
   end
 
   test do
