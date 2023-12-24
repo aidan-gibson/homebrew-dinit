@@ -10,6 +10,6 @@ jobs:
         uses: dawidd6/action-homebrew-bump-formula@v3.10.1
         with:
           token: ${{ secrets.TOKEN }}
-          no_fork: true
+          no_fork: false
           tap: davmac314/dinit
           formula: dinit
